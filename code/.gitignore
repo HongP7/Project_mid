@@ -1,0 +1,34 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# OCR cache and temporary API output
+cv19_project/cache/
+cv19_project/ocr_labels/
+
+# Large generated page images
+cv19_project/images/
+cv19_project/**/rendered/
+cv19_project/work/**/rendered/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Assigned PDFs are large data sources; enable explicitly if you need to publish them
+CV19-Lê Minh Nhật-22127308/
+
+# Large reference/sample/tool bundles
+dictionaries/
+samples (1)/
+tools/

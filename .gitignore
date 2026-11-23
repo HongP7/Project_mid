@@ -1,0 +1,33 @@
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Scanned books and other large/reference datasets
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.zip
+*.xlsx
+dictionaries/
+samples/
+tools/
+cv19_project/images/
+cv19_project/work/
+cv19_project/cache/
+cv19_project/out/
+cv19_project/ocr_labels/
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db

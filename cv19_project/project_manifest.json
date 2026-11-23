@@ -1,0 +1,79 @@
+{
+  "project": "Building a Chinese-Vietnamese Parallel Corpus on Daily Life",
+  "project_code": "cv19",
+  "student": {
+    "name": "Le Minh Nhat",
+    "student_id": "22127308"
+  },
+  "document_type": "T1 (from assigned filenames)",
+  "source_format": "PDF scan",
+  "scope": {
+    "parts": [
+      "T1_Tứ Nguyên Yếu Lý (Phần 1).pdf",
+      "T1_Tứ Nguyên Yếu Lý (Phần 2).pdf",
+      "T1_Tứ Nguyên Yếu Lý (Phần 3).pdf"
+    ],
+    "counterpart_scope_verified": false,
+    "instruction": "Compare the two versions and confirm matching scope before OCR."
+  },
+  "scope_review": {
+    "status": "pending",
+    "counterpart_files": [],
+    "checked_by": "",
+    "checked_at": "",
+    "notes": "Compare both versions and confirm they cover the same pages before OCR."
+  },
+  "pdfs": [
+    {
+      "file_name": "T1_Tứ Nguyên Yếu Lý (Phần 1).pdf",
+      "source_path": "C:\\Paite\\Project_mid\\CV19-Lê Minh Nhật-22127308\\T1_Tứ Nguyên Yếu Lý (Phần 1).pdf",
+      "pages": 451,
+      "extracted_text_chars": 0,
+      "has_text_layer": false,
+      "page_sizes_pt": [
+        {
+          "width": 1066.67,
+          "height": 1513.33
+        },
+        {
+          "width": 1066.9,
+          "height": 1513.33
+        }
+      ]
+    },
+    {
+      "file_name": "T1_Tứ Nguyên Yếu Lý (Phần 2).pdf",
+      "source_path": "C:\\Paite\\Project_mid\\CV19-Lê Minh Nhật-22127308\\T1_Tứ Nguyên Yếu Lý (Phần 2).pdf",
+      "pages": 485,
+      "extracted_text_chars": 0,
+      "has_text_layer": false,
+      "page_sizes_pt": [
+        {
+          "width": 1066.67,
+          "height": 1513.33
+        },
+        {
+          "width": 1066.9,
+          "height": 1513.33
+        }
+      ]
+    },
+    {
+      "file_name": "T1_Tứ Nguyên Yếu Lý (Phần 3).pdf",
+      "source_path": "C:\\Paite\\Project_mid\\CV19-Lê Minh Nhật-22127308\\T1_Tứ Nguyên Yếu Lý (Phần 3).pdf",
+      "pages": 548,
+      "extracted_text_chars": 0,
+      "has_text_layer": false,
+      "page_sizes_pt": [
+        {
+          "width": 1066.67,
+          "height": 1513.33
+        },
+        {
+          "width": 1066.9,
+          "height": 1513.33
+        }
+      ]
+    }
+  ]
+}
