@@ -51,6 +51,7 @@ def read_plan(path):
             "pdf_page",
             "image_name",
             "classification",
+            "needs_review",
             "notes",
         }
         if not required_fields.issubset(reader.fieldnames or []):
@@ -63,8 +64,14 @@ def read_plan(path):
             page_text = (row.get("pdf_page") or "").strip()
             filename = (row.get("image_name") or "").strip()
             category_text = (row.get("classification") or "").strip()
+            review_text = (row.get("needs_review") or "").strip().lower()
             if not book_name or not page_text or not filename:
                 errors.append(f"row {row_number}: book, pdf_page, or image_name is empty")
+                continue
+            if review_text not in {"yes", "no"}:
+                errors.append(
+                    f"row {row_number}: needs_review must be 'yes' or 'no'"
+                )
                 continue
             try:
                 page_number = int(page_text)
@@ -110,13 +117,15 @@ def read_plan(path):
                 )
                 continue
             seen_pages.add(page_key)
+            needs_review = review_text == "yes"
             planned_pages.append(
                 {
                     "pdf_name": pdf_name,
                     "page": page_number,
                     "book_name": book_name,
                     "filename": filename,
-                    "categories": categories,
+                    "categories": [] if needs_review else categories,
+                    "needs_review": needs_review,
                 }
             )
 
@@ -189,6 +198,12 @@ def apply_plan(planned_pages):
     destinations = []
     expected_destinations = set()
     classified_count = 0
+    skipped_review_count = sum(1 for page in planned_pages if page["needs_review"])
+    unclassified_count = sum(
+        1
+        for page in planned_pages
+        if not page["categories"] and not page["needs_review"]
+    )
     for page in planned_pages:
         if not page["categories"]:
             continue
@@ -265,7 +280,8 @@ def apply_plan(planned_pages):
 
     print(
         f"Applied {classified_count} classified page(s); "
-        f"left {len(planned_pages) - classified_count} page(s) for review; "
+        f"left {unclassified_count} unclassified page(s); "
+        f"skipped {skipped_review_count} needs_review=yes page(s); "
         f"copied {copied} image(s) and removed {len(stale_destinations)} stale image(s)"
     )
 

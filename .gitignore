@@ -31,3 +31,4 @@ cv19_project/ocr_labels/
 .vscode/
 .DS_Store
 Thumbs.db
+/cv19_paths.local.json

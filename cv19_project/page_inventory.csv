@@ -1,4 +1,4 @@
-book,pdf_page,image_name,classification,has_hannom,has_vietnamese,needs_review,notes
+﻿book,pdf_page,image_name,classification,has_hannom,has_vietnamese,needs_review,notes
 T1_Tứ Nguyên Yếu Lý (Phần 1),1,T1_Tứ Nguyên Yếu Lý (Phần 1).001.jpg,misc,,,no,Visually reviewed from 300 DPI scan.
 T1_Tứ Nguyên Yếu Lý (Phần 1),2,T1_Tứ Nguyên Yếu Lý (Phần 1).002.jpg,misc,,,no,Visually reviewed from 300 DPI scan.
 T1_Tứ Nguyên Yếu Lý (Phần 1),3,T1_Tứ Nguyên Yếu Lý (Phần 1).003.jpg,misc,,,no,Visually reviewed from 300 DPI scan.
@@ -12,11 +12,11 @@ T1_Tứ Nguyên Yếu Lý (Phần 1),10,T1_Tứ Nguyên Yếu Lý (Phần 1).010
 T1_Tứ Nguyên Yếu Lý (Phần 1),11,T1_Tứ Nguyên Yếu Lý (Phần 1).011.jpg,misc,,,no,Visually reviewed from 300 DPI scan.
 T1_Tứ Nguyên Yếu Lý (Phần 1),12,T1_Tứ Nguyên Yếu Lý (Phần 1).012.jpg,misc,,,no,Visually reviewed from 300 DPI scan.
 T1_Tứ Nguyên Yếu Lý (Phần 1),13,T1_Tứ Nguyên Yếu Lý (Phần 1).013.jpg,vi,,,no,Visually reviewed from 300 DPI scan.
-T1_Tứ Nguyên Yếu Lý (Phần 1),14,T1_Tứ Nguyên Yếu Lý (Phần 1).014.jpg,,,,yes,
-T1_Tứ Nguyên Yếu Lý (Phần 1),15,T1_Tứ Nguyên Yếu Lý (Phần 1).015.jpg,,,,yes,
-T1_Tứ Nguyên Yếu Lý (Phần 1),16,T1_Tứ Nguyên Yếu Lý (Phần 1).016.jpg,,,,yes,
-T1_Tứ Nguyên Yếu Lý (Phần 1),17,T1_Tứ Nguyên Yếu Lý (Phần 1).017.jpg,,,,yes,
-T1_Tứ Nguyên Yếu Lý (Phần 1),18,T1_Tứ Nguyên Yếu Lý (Phần 1).018.jpg,,,,yes,
+T1_Tứ Nguyên Yếu Lý (Phần 1),14,T1_Tứ Nguyên Yếu Lý (Phần 1).014.jpg,vi,no,yes,no,Body prose in Vietnamese; page clearly contains readable text.
+T1_Tứ Nguyên Yếu Lý (Phần 1),15,T1_Tứ Nguyên Yếu Lý (Phần 1).015.jpg,vi,no,yes,no,Body prose in Vietnamese; continuation page.
+T1_Tứ Nguyên Yếu Lý (Phần 1),16,T1_Tứ Nguyên Yếu Lý (Phần 1).016.jpg,blank,no,no,no,No front-side text; faint reverse-side show-through only.
+T1_Tứ Nguyên Yếu Lý (Phần 1),17,T1_Tứ Nguyên Yếu Lý (Phần 1).017.jpg,toc,no,yes,no,Table of contents in Vietnamese.
+T1_Tứ Nguyên Yếu Lý (Phần 1),18,T1_Tứ Nguyên Yếu Lý (Phần 1).018.jpg,toc,no,yes,no,Continuation of table of contents in Vietnamese.
 T1_Tứ Nguyên Yếu Lý (Phần 1),19,T1_Tứ Nguyên Yếu Lý (Phần 1).019.jpg,,,,yes,
 T1_Tứ Nguyên Yếu Lý (Phần 1),20,T1_Tứ Nguyên Yếu Lý (Phần 1).020.jpg,,,,yes,
 T1_Tứ Nguyên Yếu Lý (Phần 1),21,T1_Tứ Nguyên Yếu Lý (Phần 1).021.jpg,,,,yes,
@@ -398,7 +398,7 @@ T1_Tứ Nguyên Yếu Lý (Phần 1),396,T1_Tứ Nguyên Yếu Lý (Phần 1).39
 T1_Tứ Nguyên Yếu Lý (Phần 1),397,T1_Tứ Nguyên Yếu Lý (Phần 1).397.jpg,,,,yes,
 T1_Tứ Nguyên Yếu Lý (Phần 1),398,T1_Tứ Nguyên Yếu Lý (Phần 1).398.jpg,,,,yes,
 T1_Tứ Nguyên Yếu Lý (Phần 1),399,T1_Tứ Nguyên Yếu Lý (Phần 1).399.jpg,ch,yes,,no,"H?n-N?m text page, visually reviewed."
-T1_Tứ Nguyên Yếu Lý (Phần 1),400,T1_Tứ Nguyên Yếu Lý (Phần 1).400.jpg,vi,,yes,yes,"User requested vi; opened .400.jpg appears H?n-N?m, so verify page mapping."
+T1_Tứ Nguyên Yếu Lý (Phần 1),400,T1_Tứ Nguyên Yếu Lý (Phần 1).400.jpg,ch,yes,no,no,User confirmed ch; normal image orientation.
 T1_Tứ Nguyên Yếu Lý (Phần 1),401,T1_Tứ Nguyên Yếu Lý (Phần 1).401.jpg,ch,yes,,no,"H?n-N?m text page, visually reviewed."
 T1_Tứ Nguyên Yếu Lý (Phần 1),402,T1_Tứ Nguyên Yếu Lý (Phần 1).402.jpg,,,,yes,
 T1_Tứ Nguyên Yếu Lý (Phần 1),403,T1_Tứ Nguyên Yếu Lý (Phần 1).403.jpg,,,,yes,

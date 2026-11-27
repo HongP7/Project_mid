@@ -5,6 +5,23 @@ the Windows account or the folder from which a command is run. Assigned PDFs
 are read from `CV19-Lê Minh Nhật-22127308\`; generated work files go to
 `cv19_project\`.
 
+## Local data paths
+
+When the assigned PDFs, samples, dictionary, or alignment tool archive live
+outside the repository, create `cv19_paths.local.json` in the project root.
+This machine-specific file is ignored by Git. Paths must be absolute; omitted
+keys keep the repository-relative defaults. `WORK_ROOT` remains
+`cv19_project\`, so changing data locations does not move project state.
+
+```json
+{
+  "assigned_root": "C:\\path\\to\\CV19-Lê Minh Nhật-22127308",
+  "samples_root": "C:\\path\\to\\samples",
+  "dictionaries_root": "C:\\path\\to\\dictionaries",
+  "alignment_tool_archive": "C:\\path\\to\\tools\\ocr-nom-align-main.zip"
+}
+```
+
 ## Requirements
 
 - Python 3.10 or later
@@ -60,7 +77,11 @@ is copied to both categories. Do not assign categories based only on page
 numbers. Leave uncertain classifications blank (or enter `review`) until
 reviewed. The classifier applies only rows with a category, so you can work
 through verified pages in batches; it still checks that the inventory has a
-row for every page.
+row for every page. The sheet must include `needs_review` with an explicit
+`yes` or `no` value. Rows marked `yes` are never applied, even when their
+`classification` cell is populated. If such a row was applied previously, the
+next reconciliation removes its derived category copy and applied-state entry;
+the inventory row itself remains unchanged for review.
 
 Apply the completed sheet:
 
